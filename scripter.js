@@ -1,24 +1,29 @@
+
   const slides = document.querySelectorAll('.slide');
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
   let currentIndex = 0;
 
-  function showSlide(index) {
+  function showSlides(index) {
     slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
+      slide.classList.remove('active');
+      if (i === index || i === index + 1) {
+        slide.classList.add('active');
+      }
     });
   }
 
   prevBtn.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
+    if (currentIndex === slides.length - 1) currentIndex = slides.length - 2;
+    showSlides(currentIndex);
   });
 
   nextBtn.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
+    if (currentIndex >= slides.length - 1) currentIndex = 0;
+    showSlides(currentIndex);
   });
 
-  // Inicializar
-  showSlide(currentIndex);
+  showSlides(currentIndex);
 
