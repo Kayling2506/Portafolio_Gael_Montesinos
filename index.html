@@ -4,118 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="author" content="Luis Enrique Ramirez">
+    <meta name="description" content="Buscas comprar el nuevo coche de tu vida, aqui lo encontraras, contactame para tener más información sobre el tema">
+    <meta name="keywords" content="coches, venta de coches, comprar coche, autos, automoviles, carros, automoviles, agencias, reventa, venta, compra, adquisición">
+    <meta name="copyright" content="Luis Enrique Ramirez">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="img/icono1.png" type="image/png">
+    <script src="scripter.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styleer.css">
-    <title>Pagina web basica</title>
-
+    <title>Gael Santiago Montesinos</title>
 </head>
 <body>
-<!-- Encabezado de la pagina -->
-    <div class="head">
+<!-- Sección de bienvenida - Primera sección-->
+<section class="bienvenida">
+  <div class="contenido">
+    <h1>¡Hola, soy Gael Santiago!</h1>
+    <p>Me especializo en la venta y adquisicón de automoviles de cualquier marca y módelo en el mercado automotriz</p>
+    <a href="../autos" class="btn">Explorar más</a>
+  </div>
+  <div class="imagen">
+    <img src="img/Inicio_Auto.png" alt="Retrato de Luis o imagen representativa">
+  </div>
+</section>
 
-        <div class="logo">
-            <a href="#">Logo</a>
-        </div>
-
-        <!-- Opciones sobre el MENU -->
-        <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Conacto</a>
-            <a href="#">Productos</a>
-            <a href="#">Precio</a>
-        </nav>
-
+<!-- Sección de autos - Segunda sección-->
+<section id="autos" class="autos">
+  <h2>Modelos de Autos que Manejo</h2>
+  <div class="carrusel-container">
+    <button class="prev">&#10094;</button>
+    <div class="carrusel">
+      <div class="slide active">
+        <img src="img/Ilustración_1.png" alt="ByD">
+        <h3>BYD</h3>
+        <p>Confiable, eficiente y perfecto para ciudad y carretera.</p>
+      </div>
+      <div class="slide">
+        <img src="img/Ilustracion_2.png" alt="Nissan Sentra">
+        <h3>Nissan</h3>
+        <p>Compacto y versátil, ideal para trayectos urbanos con estilo.</p>
+      </div>
+      <div class="slide">
+        <img src="img/Ilustracion_3.png" alt="Ford Ranger">
+        <h3>Ford</h3>
+        <p>Potente y resistente, lista para cualquier terreno.</p>
+      </div>
     </div>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
 
-    <!-- Inicio de la pagina -->
-    <header class="content header">
-        <h2 class="title">Inicio</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Ipsam necessitatibus odio quisquam reprehenderit quas, 
-             obcaecati, harum hic molestiae sequi ipsa nihil id tempore explicabo 
-            libero vero quia asperiores similique dicta.
-        </p>
+<!-- Sección de contacto - Tercera sección-->
+<section id="contacto" class="contacto">
+  <h2>¿Dónde encontrarme?</h2>
+  <div class="contacto-contenido">
+    <div class="info-contacto">
+      <p><strong>Ciudad:</strong> Metepec, Estado de México</p>
+      <p><strong>Zona:</strong> Centro / San Jerónimo Chicahualco</p>
+      <p><strong>Código Postal:</strong> 52140</p>
+      <p><strong>Email:</strong> luis.ejemplo@email.com</p>
+      <p><strong>Teléfono:</strong> +52 722 123 4567</p>
+    </div>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps?q=Metepec+Estado+de+México&output=embed"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
 
-        <div class="btn-home">
-            <a href="#" class="btn">Saber mas</a>
-            <a href="#" class="btn">Saber mas</a>
-        </div>
-    </header>
-
-    <section class="content sau">
-
-        <!-- Productos que se venden -->
-        <h2 class="title">Productos</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-            elit. Veritatis excepturi dolore, harum asperiores 
-            cupiditate officiis quia odit reiciendis quidem iure 
-            architecto laudantium 
-            nihil saepe pariatur vel labore molestias consectetur veniam?</p>
-        
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fab fa-angular"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-            <div class="box">
-                <i class="fab fa-apple"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-            <div class="box">
-                <i class="fab fa-android"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="content about">
-<!-- Sobre Nosotros -->
-        <h2 class="title">Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Ut soluta similique 
-            quia reprehenderit eligendi aliquam. Sit 
-            odio impedit quibusdam. Velit corporis, 
-            optio debitis quidem ex ipsam rerum dolorem autem sequi.
-        </p>
-
-        <a href="#" class="btn">Saber mas</a>
-
-    </section>
-<!-- Presentacion de precios -->
-    <section class="content price">
-
-        <article class="contain">
-            <h2 class="title">Precio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Ut soluta similique 
-                quia reprehenderit eligendi aliquam. Sit 
-                odio impedit quibusdam. Velit corporis, 
-                optio debitis quidem ex ipsam rerum dolorem autem sequi.
-            </p>
-
-            <a href="#" class="btn">Saber precio</a>
-
-        </article>
-
-    </section>
-<!-- Cabezera de contacto -->
-<!--  
-    <section class="content contact">
-        <h2 class="title">Contacto</h2>
-        <p>48481548</p>
-        <figure class="map">
-            <img src="img/pexels-peter-olexa-4012966.jpg" height="40px" width="" alt="mapa">
-        </figure>
-    
-    </section>
--->
+<a href="https://wa.me/522221234567" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <img src="img/WhatApp_Icon.png    " alt="WhatsApp" />
+</a>
 </body>
 </html>
