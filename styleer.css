@@ -318,48 +318,75 @@ body {
 }
 
 /*Sección de modelos de coches*/
-.marca-seccion table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: hsla(0, 100%, 99%, 0.796);
-  box-shadow: 0 2px 8px rgba(41, 41, 41, 0.05);
-  border-radius: 8px;
-  overflow: hidden;
+.modelos-por-marca {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
 }
 
-.marca-seccion th,
-.marca-seccion td {
+.modelos-por-marca h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2a5298;
+  margin-bottom: 3rem;
+}
+
+.marca-seccion {
+  margin-bottom: 3rem;
+}
+
+.marca-seccion h3 {
+  font-size: 1.8rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #2a5298;
+  padding-bottom: 0.5rem;
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+th, td {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   text-align: left;
   font-size: 1rem;
 }
 
-.marca-seccion th {
-  background-color: #ffc402;
+th {
+  background-color: #2a5298;
   color: #fff;
 }
 
-.marca-seccion tr:hover td {
+tr:hover td {
   background-color: #f0f4f8;
 }
 
-/* Responsivo para pantallas pequeñas */
-@media (max-width: 768px) {
+/* 📱 Responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
   .modelos-por-marca h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .marca-seccion h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   th, td {
-    font-size: 0.20rem;
-    padding: 0.2rem;
+    font-size: 0.95rem;
+    padding: 0.8rem;
   }
 
   table {
-    font-size: 0.20rem;
+    font-size: 0.95rem;
   }
 }
