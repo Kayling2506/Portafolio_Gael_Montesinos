@@ -27,3 +27,4 @@
 
   showSlides(currentIndex);
 
+  //Función de carga de Elección de modelo de coche
