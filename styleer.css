@@ -326,7 +326,7 @@ body {
 .modelos-por-marca h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #2a5298;
+  color: #ff9900;
   margin-bottom: 3rem;
 }
 
@@ -336,9 +336,9 @@ body {
 
 .marca-seccion h3 {
   font-size: 1.8rem;
-  color: #1e3c72;
+  color: #ff8902;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #2a5298;
+  border-bottom: 2px solid #ff9100;
   padding-bottom: 0.5rem;
 }
 
@@ -352,7 +352,7 @@ table {
   min-width: 500px;
   border-collapse: collapse;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 th, td {
@@ -363,7 +363,7 @@ th, td {
 }
 
 th {
-  background-color: #2a5298;
+  background-color: #f8b601;
   color: #fff;
 }
 
