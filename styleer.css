@@ -344,7 +344,7 @@ body {
   background-color: #f0f4f8;
 }
 
-/* 📱 Responsivo para pantallas pequeñas */
+/* Responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
   .modelos-por-marca h2 {
     font-size: 1.5rem;
