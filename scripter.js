@@ -28,7 +28,4 @@
   showSlides(currentIndex);
 
   //Función de carga de Elección de modelo de coche
-function mostrarDescripcion(elemento) {
-  const texto = elemento.querySelector(".descripcion");
-  texto.style.display = texto.style.display === "block" ? "none" : "block";
-}
+
