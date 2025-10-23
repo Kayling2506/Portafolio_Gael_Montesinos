@@ -302,7 +302,6 @@ body {
 }
 
 .foto {
-  aspect-ratio: 4 / 3; /* Mantiene proporción horizontal */
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -311,12 +310,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .foto img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Evita que se estire o voltee */
+  height: auto;
+  object-fit: contain; /* ✅ Mantiene proporción sin recortes */
   display: block;
   transition: transform 0.3s ease;
 }
@@ -332,9 +332,15 @@ body {
   }
 
   .foto {
-    aspect-ratio: 1 / 1; /* Cuadrado en móviles */
+    height: auto; /* ✅ Permite que la altura se adapte a la imagen */
+  }
+
+  .foto img {
+    max-height: 100%;
+    object-fit: contain;
   }
 }
+
 
 
 /*Sección de modelos de coches*/
