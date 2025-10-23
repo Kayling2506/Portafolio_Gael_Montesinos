@@ -341,6 +341,30 @@ body {
   }
 }
 
+/*Parche de visualización de las fotos en escalas menor a los 768 px.*/
+/*Este parche ayuda a que las imagenes al momento de recortar, presenten fallas de escala*/
+.foto {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
 
 
 /*Sección de modelos de coches*/
