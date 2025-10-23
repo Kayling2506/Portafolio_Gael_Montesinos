@@ -300,15 +300,21 @@ body {
 }
 
 .foto {
+  aspect-ratio: 4 / 3; /* Mantiene proporción horizontal */
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .foto img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Evita que se estire o voltee */
   display: block;
   transition: transform 0.3s ease;
 }
@@ -316,6 +322,18 @@ body {
 .foto:hover img {
   transform: scale(1.05);
 }
+
+/* 📱 Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .galeria h2 {
+    font-size: 2rem;
+  }
+
+  .foto {
+    aspect-ratio: 1 / 1; /* Cuadrado en móviles */
+  }
+}
+
 
 /*Sección de modelos de coches*/
 .modelos-por-marca {
@@ -391,4 +409,3 @@ tr:hover td {
   }
 }
 
-/*Codigo de base*/
