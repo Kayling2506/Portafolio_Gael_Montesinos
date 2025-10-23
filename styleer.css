@@ -1,9 +1,11 @@
 /* Estilo general */
+/* Estilo de las letras general, */ 
 body {
   font-family: 'Segoe UI', sans-serif;
 }
 
 /*Edición del sistma responsivo de la propia pagina web*/
+/*Sección de correción de margene, de la página*/
 .bienvenida h1,
 .autos h2,
 .ubicacion h2 {
