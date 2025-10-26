@@ -33,4 +33,3 @@ function mostrarDescripcion(elemento) {
   texto.style.display = texto.style.display === "block" ? "none" : "block";
 }
 
-//Funcion de carga de imagenes
