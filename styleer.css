@@ -280,7 +280,8 @@ body {
   }
 }
 
-/* Sección de Galería */
+/*Esta sección de galeria, cuenta la funsión de bloqueo de descarga de imagenes dentro de la página.
+/* Sección de Galería de los Autos*/
 .galeria-protegida {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
@@ -311,6 +312,8 @@ body {
   pointer-events: none;
 }
 
+/*Cuadro en blanco, como separación de la galeria y la sección de Ubicación*/
+/*Sección en blanco de la página*/
 .spacer { height: 2rem; width: 100%; }
 
 
